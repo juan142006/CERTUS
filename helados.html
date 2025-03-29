@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner despegable</title>
+    <style>
+        /*el fontamily sirve para el tipo de letra, el margen,
+        el padding es para dar una separaciones de cada textoy
+        el backgrund color, sirve para dar un color determinado
+        al documento*/
+        body{
+            font-family: Arial,sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /*CONTENEDOR PRINCIPAL*/
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background-color: #333;
+        }
+        /*CONTENEDOR DE IMAGINES EN MOVIMIENTO*/
+        .banner-images {
+            display: flex;
+            animation: scrollBanner 15s linear infinite;
+        }
+        /*ANIMACION DE DESPLAZEAMIENT HORIZONTAL*/
+        @keyframes scrollBanner {
+            0% {
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        /*ESTILOS PARA E TEXTO DE BIENVENIA*/
+        .welcome-text{
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+            color: #333;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: blue;
+        }
+        .video{
+            text-align: center;
+            margin: 40px;
+        }
+        .video iframe{
+            width: 80%;
+            height: 350px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="welcome-text">bienbenidos a la heladeria</h1>
+    </header>
+    <header>
+        <!--banner de imagines en movimiento-->
+        <div class="banner-container">
+             <div class="banner-images">
+               <img src="../clase3/imagines/images.jpg" alt="heladeria 1">
+        <img src="../clase3/imagines/images (1).jpg" alt="heladeria 2">
+        <img src="../clase3/imagines/images (2).jpg" alt="heladeria 3">
+       </div>
+    </div>
+
+   <br><br>
+<section class="video">
+    <h2>descubre como es la preparacion de helados</h2>
+    <iframe src="https://youtu.be/pfJsSHthBKE?si=4DVh-6V2anwLch2d"
+    title="heladeria">
+        </iframe>
+</section>
+    
+    
+
+         
+      
+
+    <footer>
+        <!--colocamos el copyright-->
+        <p>&copy; 2025-heladeria estela | todos los derechos reservados</p>
+        <!--añadimos numero de contacto-->
+        <p><strong> contacto: </strong><a href="https://wa.link/k64rjf" target="_blank">913283564</a></p>
+    </footer>
+      
+      
+        
+        
+    </header>
+    
+</body>
+</html>
