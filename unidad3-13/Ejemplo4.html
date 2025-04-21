@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title># PAR O IMPAR</title>
+</head>
+<body>
+    <h3> El numero es par o impar?</h3>
+    <input type="number" id="numero" placeholder="Escribe un Numero: ">
+    <button onclick="Verificar()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function Verificar(){
+            const num=Number(document.getElementById("numero").value);
+            //AHORA UTILIZAMOS EL SIMBOLO % QUE AL FINAL ES RESIDUO
+            if(num % 2 === 0){
+                document.getElementById("resultado").textContent = "El numero es PAR";
+            }else{
+                document.getElementById("resultado").textContent = "El numero es IMPAR";
+
+            }
+        }
+    </script>
+    
+</body>
+</html>

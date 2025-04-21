@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+</head>
+<body>
+    <h3>Ingrese dos numeros </h3>
+
+    <!--El placeholder sirve para colocar mensaje de agua-->
+    <input type="number"  id="numero1" placeholder="Ingresa el 1 #" ><br>
+    <input type="number"  id="numero2" placeholder="Ingrese el 2do #"><br>
+    <button onclick="sumar()">Sumar</button><br>
+
+    <p id="resultado"></p>
+
+    <script>
+         //Esta funcion se llama al hacer click al boton sumar
+        function sumar(){
+            const num1=document.getElementById("numero1").value;
+            const num2=document.getElementById("numero2").value;
+
+            //CONVERTIR LOS VALORES DE TEXTO A NUMEROS
+            const suma=Number(num1)+(num2)
+        
+
+            //MOSTRAR EL RESULTADO EN EL PARRAFO
+            document.getElementById("resultado").textContent= "La suma es: "+suma;
+        }
+
+           
+
+        
+          
+    </script>
+
+    
+</body>
+</html>
